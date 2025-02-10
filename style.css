@@ -1,0 +1,427 @@
+/* Style for the header on Homepage */
+.headerlogo {
+    
+    background-color: black; /* Black background for the header */
+    padding: 10px 0; /* Padding for the header */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for the logo container on Homepage */
+.logo-container {
+    align-self: center; /* Align the logo container to the left */
+}
+
+
+.logo {
+    width: 1000px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it's displayed as a block element */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* Style for the black banner on Homepage */
+.banner {
+    width: 100%;
+    height: 25px; /* Adjust the height as needed */
+    background-color: black;
+    margin-top: 10px; /* Adjust the spacing as needed */
+}
+.banner2 {
+    width: 100%;
+    height: 25px; /* Adjust the height as needed */
+    background-color: #974287;
+    margin-top: 10px; /* Adjust the spacing as needed */
+}
+
+/* Style for the navigation menu on Homepage */
+.nav-menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 10px;
+    margin: 10px;
+    display: flex; /* Display menu items in a row */
+    justify-content: center; /* Center the menu items */
+    background-color: #ffffff; /* Background color for the menu */
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+.nav-menu a {
+    color: rgb(0, 0, 0); /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 20px; /* Padding for the links */
+    display: block;
+    text-shadow: 
+        -0.5px -0.5px 0 #000,  
+         0.5px -0.5px 0 #000,
+        -0.5px  0.5px 0 #000,
+         0.5px  0.51px 0 #000; /* Add stroke to text */
+}
+
+.nav-menu a:hover {
+    background-color: #575757; /* Change background on hover */
+}
+
+
+/*Navigation Menu on the Sidebar*/ 
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    background-color: #974287;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content p {
+    margin: 20px 0;
+}
+
+/* Homepage "Read More" Articles Section */
+
+/* Style for the preview section */
+.preview {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.preview-item {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #575757;
+}
+
+/* Style for the footer for all webpages*/
+.footer {
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding for the footer */
+}
+
+/* Default Color of Text on each page */
+
+.paragraphtextcolor {
+color: white;
+text-align: center;
+
+
+}
+
+
+/*Gallery Webpage CSS Section */
+
+/* Style for the gallery section */
+* {box-sizing: border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 
+        -0.5px -0.5px 0 #ffffff,  
+         0.5px -0.5px 0 #ffffff,
+        -0.5px  0.5px 0 #ffffff,
+         0.5px  0.51px 0 #ffffff; /* Add stroke to text */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev, .next { /* Presentation Style of showing images */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Main Header of Other Webpages Text Colors */
+.gallerytextcolor{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    -0.5px -0.5px 0 #000000,  
+     0.5px -0.5px 0 #000000,
+    -0.5px  0.5px 0 #000000,
+     0.5px  0.51px 0 #000000; /* Add stroke to text */
+
+}
+
+.abouttextcolor{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    -0.5px -0.5px 0 #000000,  
+     0.5px -0.5px 0 #000000,
+    -0.5px  0.5px 0 #000000,
+     0.5px  0.51px 0 #000000; /* Add stroke to text */
+
+}
+
+.pricingtextcolor{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    -0.5px -0.5px 0 #000000,  
+     0.5px -0.5px 0 #000000,
+    -0.5px  0.5px 0 #000000,
+     0.5px  0.51px 0 #000000; /* Add stroke to text */
+
+}
+
+.contactmetextcolor{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    -0.5px -0.5px 0 #000000,  
+     0.5px -0.5px 0 #000000,
+    -0.5px  0.5px 0 #000000,
+     0.5px  0.51px 0 #000000; /* Add stroke to text */
+
+}
+
+.FAQstextcolor{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 
+    -0.5px -0.5px 0 #000000,  
+     0.5px -0.5px 0 #000000,
+    -0.5px  0.5px 0 #000000,
+     0.5px  0.51px 0 #000000; /* Add stroke to text */
+
+}
+
+
+/* About Page CSS Content */
+
+.aboutimage {
+    width: 15%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.centered-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add border to the image */
+.bordered-image {
+    border: 10px solid #000000; /* Adjust the border color and size as needed */
+    border-radius: 20px; /* Optional: Add rounded corners */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between social media icons */
+}
+
+.social-logo {
+    width: 65px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/*Contact Me Webpage Elements */
+
+/* Content for the Forms */
+.main-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+.form-container h1 {
+    text-align: center;
+}
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form label, /*Formatting form to fit with sidebar navigation */
+.form-container form input,
+.form-container form textarea,
+.form-container form button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.form-container form textarea {
+    height: 100px; /* Adjust the height as needed */
+}
+.form-container form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #974287;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-container form button:hover {
+    background-color: #974287;
+}
